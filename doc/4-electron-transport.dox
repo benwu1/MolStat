@@ -83,6 +83,13 @@ Transport observables are defined in electron_transport/simulator_models/observa
    \if fullref
    - Implemented by the class molstat::transport::ZeroBiasConductance.
    \endif
+   
+- Distance
+   - D
+   - Name (for use in input) is `%Distance`.
+   \if fullref
+   - Implemented by the class molstat::transport::Distance.
+   \endif   
 
 \subsection subsec_transport_simulate_models Models for Simulating Electron Transport
 \if fullref
@@ -209,9 +216,9 @@ Complete details for each of these channel models can be found in the full refer
    \f]
    \if fullref
    - Implemented by the class molstat::transport::RectangularBarrier; full details are presented there.
-   - Compatible with the molstat::transport::ZeroBiasConductance observable.
+   - Compatible with the molstat::transport::ZeroBiasConductance and molstat::transport::Distance observable.
    \elseif userman
-   - Compatible with the ZeroBiasConductance observable.
+   - Compatible with the ZeroBiasConductance and molstat::transport::Distance observable.
    \endif
 
 \section sec_fit_electron_transport Fitting Electron Transport Properties
